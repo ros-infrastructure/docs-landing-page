@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROS</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- Reset browser styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  
+  <!-- Main styles -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Components style -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main-section.css">
+  <link rel="stylesheet" href="css/helpful-resources.css">
+  <link rel="stylesheet" href="css/beginners.css">
+  <link rel="stylesheet" href="css/contribute.css">
+  <link rel="stylesheet" href="css/community-resources.css">
+  <link rel="stylesheet" href="css/distributions.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <!-- Js -->
+  <script src="js/data.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animation.js" defer></script>
+
+  <!-- Mobile menu -->
+ <div class="mobile-menu">
+  <nav class="mobile-menu-list">
+    <a href="#ros-for-beginners" class="mobile-menu-link">GETTING STARTED</a>
+    <a href="#contribute-section" class="mobile-menu-link">CONTRIBUTE</a>
+    <a href="#community-resources" class="mobile-menu-link">COMMUNITY</a>
+    <a href="#distributions-section" class="mobile-menu-link">EOL DISTROS</a>
+  </nav>
+ </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <img class="header-ros-logo" src="/svgs/logo-header.svg" alt="ROS logo" width="108" height="28">
+    <nav id="header-menu" class="header-menu">
+      <a href="#ros-for-beginners" class="header-menu-link">GETTING STARTED</a>
+      <a href="#contribute-section" class="header-menu-link">CONTRIBUTE</a>
+      <a href="#community-resources" class="header-menu-link">COMMUNITY</a>
+      <a href="#distributions-section" class="header-menu-link">EOL DISTROS</a>
+    </nav>
+
+    </nav>
+    <div class="header-button-wrapper">
+      <a class="github-header-button" href="https://github.com/ros2">
+        <div class="github-header-button-content github-header-button-initial">
+          <img class="header-github-icon" src="/svgs/github.svg" alt="github icon">
+          <span class="github-button-text">ROS Github</span>
+        </div>
+        <div class="github-header-button-content github-header-button-hover">
+          <img class="header-github-icon" src="/svgs/github.svg" alt="github icon">
+          <span class="github-button-text">Contribute</span>
+        </div>
+      </a>
+      <div class="header-burger-button">
+        <input class="menu-icon__cheeckbox" type="checkbox" id="burger-checkbox"/>
+        <div class="header-burger-button-animation-container">
+          <span class="burger-button-span"></span>
+          <span class="burger-button-span"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main section-->
+  <section class="main-grid main-section-layout">
+    <div class="main-title-container">
+      <h1>ROS Developer Documentation</h1>
+      <p class="main-description">The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. Find documentation for our latest distributions here!</p>
+
+      <!-- Desktop banner-->
+    <!--   <input type="checkbox" id="close-desktop-banner" class="close-checkbox"> -->
+    <!--   <a href="#" class="main-red-banner desktop-banner"> -->
+    <!--     <img src="/images/roscon.png" alt="roscon illustration" class="main-red-banner-img" width="127" height="127"> -->
+    <!--     <div class="main-red-banner-content"> -->
+    <!--         <span class="main-red-banner-title">New release of&nbsp;Humble Hawksbill</span> -->
+    <!--         <div class="main-red-banner-description"> -->
+    <!--             <span>Odence, Denmark</span> -->
+    <!--             <span>October 21st-23rd</span> -->
+    <!--         </div> -->
+    <!--     </div> -->
+    <!--     <label for="close-desktop-banner" class="close-button"> -->
+    <!--         <img src="/svgs/close.svg" alt="close icon" class="main-red-banner-close-icon" width="20" height="20"> -->
+    <!--     </label> -->
+    <!--   </a> -->
+    <!-- </div> -->
+    
+    <!-- <input type="checkbox" id="close-mobile-banner" class="close-checkbox"> -->
+    <!-- <\!-- Mobile banner-\-> -->
+    <!-- <div class="main-red-banner mobile-banner"> -->
+    <!--   <div class="main-red-banner-wrapper"> -->
+    <!--     <img src="/images/roscon.png" alt="roscon illustration" class="main-red-banner-img" width="127" height="127"> -->
+    <!--     <div class="main-red-banner-content"> -->
+    <!--       <span class="main-red-banner-title">New release of&nbsp;Humble Hawksbill</span> -->
+    <!--       <div class="main-red-banner-description"> -->
+    <!--           <span>Odence, Denmark</span> -->
+    <!--           <span>October 21st-23rd</span> -->
+    <!--       </div> -->
+    <!--   </div> -->
+    <!--   </div> -->
+    <!--   <a href="#" class="main-red-banner-mobile-button"> -->
+    <!--       Join on October 21st-23rd -->
+    <!--   </a> -->
+    <!--   <label for="close-mobile-banner" class="close-button"> -->
+    <!--       <img src="/svgs/close.svg" alt="close icon" class="main-red-banner-close-icon" width="20" height="20"> -->
+    <!--   </label> -->
+    <!-- End Mobile banner-->
+    </div>
+
+    <div class="main-cards">
+      <div class="main-big-card">
+        <a href="https://docs.ros.org/en/jazzy/">
+          <img src="/images//jazzy_jalisco.png" alt="jazzy jalisco illustration" class="main-big-card-illustration" width="282" height="282">
+        </a>
+        <div class="main-big-card-content">
+          <span class="main-orange-label">OUR LATEST ROS 2 RELEASE</span>
+          <span class="main-big-card-title">Jazzy Jalisco</span>
+          <p class="main-big-card-description">Latest Long Term Support (LTS) ROS 2 Distro.</p>
+          <div class="main-big-card-buttons-wrapper">
+            <a href="https://docs.ros.org/en/jazzy/" class="primary-button main-button-width">
+              <div class="primary-button-content primary-button-initial">
+                <img src="/svgs/book_white.svg" alt="icon" class="primary-button-download-icon">
+                <span>Discover</span>
+              </div>
+              <div class="primary-button-content primary-button-hover">
+                <img src="/svgs/book_white.svg" alt="icon" class="primary-button-download-icon">
+                <span>Discover</span>
+              </div>
+            </a>
+            <a href="#ros-for-beginners" class="outline-button main-outline-button-width">
+              <span class="outline-button-text">
+                Platform Support
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="main-cards-list" class="main-cards-list">
+        <!-- <div class="main-small-card"> -->
+        <!--   <img src="/images/iron_irwini.png" alt="illustration Iron Irwin" class="main-small-card-illustration"> -->
+        <!--   <div class="main-small-card-content-wrapper"> -->
+        <!--     <span class="main-small-card-title">Iron Irwin</span> -->
+        <!--     <span class="main-small-card-subtitle">Supported ROS 2 Distro</span> -->
+        <!--     <a href="#" class="secondary-button-small main-download-button"> -->
+        <!--       <div class="secondary-button-small-content secondary-button-small-initial"> -->
+        <!--         <img src="/svgs/book_black.svg" alt="download icon" class="download-icon"> -->
+        <!--         <span>Discover</span> -->
+        <!--       </div> -->
+        <!--       <div class="secondary-button-small-content secondary-button-small-hover"> -->
+        <!--         <img src="/svgs/book_black.svg" alt="download icon" class="download-icon"> -->
+        <!--         <span>Discover</span> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        </div>
+        <!-- Humble-->
+        <!-- <a href="https://docs.ros.org/en/humble/"> -->
+        <div class="main-small-card">
+          <a href="https://docs.ros.org/en/humble/">
+            <img src="/images/humble_hawksbill.png" alt="illustration Humble Hawksbill" class="main-small-card-illustration">
+          </a>
+          <div class="main-small-card-content-wrapper">
+            <span class="main-small-card-title">Humble Hawksbill</span>
+            <span class="main-small-card-subtitle">Previous long term support (LTS) ROS 2 distro with support until May, 2027</span>
+            <a href="https://docs.ros.org/en/humble/" class="secondary-button-small main-download-button">
+              <div class="secondary-button-small-content secondary-button-small-initial">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+              <div class="secondary-button-small-content secondary-button-small-hover">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Noetic-->
+        <div class="main-small-card">
+          <a href="https://wiki.ros.org/noetic">
+            <img src="/images/noetic_ninjemys.png" alt="illustration Noetic Ninje" class="main-small-card-illustration">
+          </a>
+          <div class="main-small-card-content-wrapper">
+            <span class="main-small-card-title">Noetic Ninjemys</span>
+            <span class="main-small-card-subtitle">Legacy ROS 1 distro with support until May, 2025</span>
+            <a href="https://wiki.ros.org/noetic" class="secondary-button-small main-download-button">
+              <div class="secondary-button-small-content secondary-button-small-initial">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+              <div class="secondary-button-small-content secondary-button-small-hover">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="main-small-card">
+          <a href="https://docs.ros.org/en/rolling/">
+            <img src="/images/rolling_ridley.png" alt="illustration Rolling Ridley" class="main-small-card-illustration">
+          </a>
+          <div class="main-small-card-content-wrapper">
+            <span class="main-small-card-title">Rolling Ridley</span>
+            <span class="main-small-card-subtitle">Our rolling release. Always fresh! Recommended for ROS package maintainers.</span>
+            <a href="https://docs.ros.org/en/rolling/" class="secondary-button-small main-download-button">
+              <div class="secondary-button-small-content secondary-button-small-initial">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+              <div class="secondary-button-small-content secondary-button-small-hover">
+                <img src="/svgs/book_black.svg" alt="download icon" class="download-icon">
+                <span class="download-text">Discover</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROS for beginners section-->
+  <section id="ros-for-beginners" class="section-layout beginners-section-layout">
+    <h2>ROS for beginners</h2>
+    <div class="main-grid">
+      <div class="beginners-content-container">
+        <p class="beginners-description">Looking to get started? Here are a few beginner tutorials to get you started!</p>
+        <div id="beginners-link-list" class="beginners-link-list">
+          <a href="https://docs.ros.org/en/jazzy/Tutorials.html" class="beginners-link-item">Tutorials</a>
+          <a href="https://docs.ros.org/en/jazzy/How-To-Guides.html" class="beginners-link-item">How to guides</a>
+          <a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html" class="beginners-link-item">Beginner: CLI Tools</a>
+          <a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries.html" class="beginners-link-item">Beginner: Client libraries</a>
+          <a href="https://vimeo.com/osrfoundation" class="beginners-link-item">Official ROS Videos</a>
+        </div>
+        <p class="beginners-description"> <a href="https://www.ros.org/reps/rep-2000.html">See REP-2000 </a> for more info on supported operating systems.</p>
+        
+      </div>
+      <div class="beginners-table">
+        <div id="beginners-table" class="table-wrapper">
+          <table>
+            <thead>
+              <tr class="table-header-row">
+                <th class="table-header-cell-main">Version</th>
+                <th class="table-header-cell">Ubuntu Noble</th>
+                <th class="table-header-cell">Ubuntu Jammy</th>
+                <th class="table-header-cell">Windows 10</th>
+                <th class="table-header-cell">MacOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td class="table-version-cell">Jazzy Jalisco</td>
+                <td class="table-data-cell">
+                  <img src="/images/recommended-to-start.png" alt="Recommended support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/recommended-to-use.svg" alt="Recommended to use icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/community-support.svg" alt="Community support icon" class="table-icon" width="28" height="28">
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-version-cell">Humble Hawksbill</td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/images/recommended-to-start.png" alt="Recommended support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/recommended-to-use.svg" alt="Recommended to use icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/community-support.svg" alt="Community support icon" class="table-icon" width="28" height="28">
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-version-cell">Rolling Ridley</td>
+                <td class="table-data-cell">
+                  <img src="/svgs/recommended-to-use.svg" alt="Recommended to use icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/recommended-to-use.svg" alt="Recommended to use icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/community-support.svg" alt="Community support icon" class="table-icon" width="28" height="28">
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-version-cell">Noetic Ninjemys</td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+                <td class="table-data-cell">
+                  <img src="/svgs/not-support.svg" alt="Not support icon" class="table-icon" width="28" height="28">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="beginners-table-legend">
+        <div class="beginners-table-legend-item">
+          <img src="/images/recommended-to-start.png" alt="Recommended to use icon" class="legend-icon" width="20" height="20">
+          <span>Tier 1: Recommended for begginers</span>
+        </div>
+        <div class="beginners-table-legend-item">
+          <img src="/svgs/recommended-to-use.svg" alt="Recommended to use icon" class="legend-icon" width="20" height="20">
+          <span>Tier 1: Fully Supported</span>
+        </div>
+        <div class="beginners-table-legend-item">
+          <img src="/svgs/limited-support.svg" alt="Limited support icon" class="legend-icon" width="20" height="20">
+          <span>Tier 2: Limited support</span>
+        </div>
+        <div class="beginners-table-legend-item">
+          <img src="/svgs/community-support.svg" alt="Community support icon" class="legend-icon" width="20" height="20">
+          <span>Tier 3: Community support</span>
+        </div>
+      </div>        
+  </section>
+ 
+  <!-- Helpful resources section-->
+  <section class="section-layout helpful-resources-layout">
+    <h2>Check helpful resources</h2>
+    <div class="main-grid">
+      <div class="helpful-resources-column">
+        <div class="helpful-resources-header">
+          <img src="/svgs/handshake.svg" alt="Community resources icon" class="helpful-resources-header-icon" width="36" height="36">
+          <h3>Community resources</h3>
+          <button type="button" id="helpful-resources-chevron-button-1" class="helpful-resources-chevron-button">
+            <img src="/svgs/chevron_backward.svg" alt="" class="helpful-resources-chevron-icon" width="20" height="12">
+          </button>
+        </div>
+        <div class="helpful-resources-content-wrapper">
+          <div id="helpful-resources-link-list-column-1" class="helpful-resources-link-list">
+            <a href="#" class="helpful-resources-link">ROS Discussion Forum</a>
+            <a href="#" class="helpful-resources-link">ROS Discord Server</a>
+            <a href="#" class="helpful-resources-link">Robotics Stack Exchange (preferred ROS support forum)</a>
+            <a href="#" class="helpful-resources-link">Official ROS Videos</a>
+            <a href="#" class="helpful-resources-link">ROSCon, our yearly developer conference</a>
+            <a href="#" class="helpful-resources-link">Cite ROS 2 in academic work using DOI: 10.1126/scirobotics.abm6074</a>
+            <a href="#" class="helpful-resources-link">Open Source Robotics Foundation Official Events Calendar</a>
+            <a href="#" class="helpful-resources-link">Open Source Robotics Foundation Community-organised Events Calendar</a>
+          </div>
+          <a href="#" data-text="Submit an event" class="helpful-resources-blue-button blue-button-animation">
+            <span>Submit an event</span>
+          </a>
+        </div>
+      </div>
+      <div class="helpful-resources-column helpful-resources-column-additional-margin">
+        <div class="helpful-resources-header">
+          <img src="/svgs/code_blocks.svg" alt="Developer resource icon" class="helpful-resources-header-icon" width="36" height="36">
+          <h3>Developer resources</h3>
+          <button type="button" id="helpful-resources-chevron-button-2" class="helpful-resources-chevron-button">
+            <img src="/svgs/chevron_backward.svg" alt="" class="helpful-resources-chevron-icon" width="20" height="12">
+          </button>
+        </div>
+        <div class="helpful-resources-content-wrapper">
+          <div id="helpful-resources-link-list-column-2" class="helpful-resources-link-list">
+            <a href="#" class="helpful-resources-link">ROS 2 Documentation</a>
+            <a href="#" class="helpful-resources-link">ROS Package API reference</a>
+            <a href="#" class="helpful-resources-link">ROS Package Index</a>
+            <a href="#" class="helpful-resources-link">ROS on Docker Hub</a>
+            <a href="#" class="helpful-resources-link">ROS Resource Status Page</a>
+            <a href="#" class="helpful-resources-link">REP-2000: ROS 2 Releases and Target Platforms</a>
+          </div>
+        </div>
+      </div>
+      <div class="helpful-resources-column helpful-resources-column-additional-margin">
+        <div class="helpful-resources-header">
+          <img src="/svgs/home.svg" alt="Project resources icon" class="helpful-resources-header-icon" width="36" height="36">
+          <h3>Project resources</h3>
+          <button type="button" id="helpful-resources-chevron-button-3" class="helpful-resources-chevron-button">
+            <img src="/svgs/chevron_backward.svg" alt="" class="helpful-resources-chevron-icon" width="20" height="12">
+          </button>
+        </div>
+        <div class="helpful-resources-content-wrapper">
+          <div id="helpful-resources-link-list-column-3" class="helpful-resources-link-list">
+            <a href="#" class="helpful-resources-link">Purchase ROS merchandise</a>
+            <a href="#" class="helpful-resources-link">Information about the ROS Trademark</a>
+            <a href="#" class="helpful-resources-link">On social media</a>
+            <a href="#" class="helpful-resources-link">Open Robotics on LinkedIn</a>
+            <a href="#" class="helpful-resources-link">Open Robotics on Twitter</a>
+            <a href="#" class="helpful-resources-link">ROS.org on Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contribute section-->
+  <section id="contribute-section" class="contribute-section-layout">
+    <div class="contribute-header">
+      <h2>Contribute</h2>
+      <div class="contribute-header-buttons-wrapper">
+        <button type="button" id="prev-button-icon" class="secondary-button contribute-button-size prev-button-animation">
+          <img src="/svgs//arrow_black.svg" alt="previous button arrow" class="prev-button-icon">
+        </button>
+        <button type="button" id="next-button-icon" class="secondary-button contribute-button-size next-button-animation">
+          <img src="/svgs//arrow_black.svg" alt="next button arrow" class="next-button-icon">
+        </button>
+      </div>
+    </div>
+    <div id="contribute" class="contribute-card-list scrollbar-hidden">  
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Ask questions, Suggested Improvements</span>
+          <p class="contribute-card-description">
+            Even if you don't want to share code, you can help us make ROS better by asking us questions when you have problems. You can do this by asking a question on <a href="http://answers.ros.org">http://answers.ros.org</a> or filing a bug ticket.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/forum.svg" alt="icon Ask questions, Suggested Improvements" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Support ROS through charitable donations</span>
+          <p class="contribute-card-description">
+            ROS is made possible through the generous support of open source contributors and the non-profit Open Source Robotics Foundation (OSRF). Tax-deductible donations to the OSRF are available through the button on the right.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/payments.svg" alt="icon Support ROS through charitable donations" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Patches</span>
+          <p class="contribute-card-description">
+            Even if you don't want to share code, you can help us make ROS better by asking us questions when you have problems. You can do this by asking a question on <a href="http://answers.ros.org">http://answers.ros.org</a> or filing a bug ticket.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/variable_insert.svg" alt="icon Patches" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Contribute to Wiki</span>
+          <p class="contribute-card-description">
+            Even if you don't want to share code, you can help us make ROS better by asking us questions when you have problems. You can do this by asking a question on <a href="http://answers.ros.org">http://answers.ros.org</a> or filing a bug ticket.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/library_books.svg" alt="icon Contribute to Wiki" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Contributing Libraries</span>
+          <p class="contribute-card-description">
+            Even if you don't want to share code, you can help us make ROS better by asking us questions when you have problems. You can do this by asking a question on <a href="http://answers.ros.org">http://answers.ros.org</a> or filing a bug ticket.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/menu_book.svg" alt="icon Contributing Libraries" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    
+      <div class="contribute-card">
+        <div class="contribute-card-content">
+          <span class="contribute-card-title">Find Collaborators</span>
+          <p class="contribute-card-description">
+            Even if you don't want to share code, you can help us make ROS better by asking us questions when you have problems. You can do this by asking a question on <a href="http://answers.ros.org">http://answers.ros.org</a> or filing a bug ticket.
+          </p>
+          <a href="#" data-text="Discover" class="secondary-button contribute-card-button-size secondary-button-animation">
+            <span>Discover</span>
+          </a>
+        </div>
+        <div class="contribute-card-illustration-wrapper">
+          <img src="/svgs/handshake.svg" alt="icon Find Collaborators" class="contribute-card-illustration-icon">
+        </div>
+      </div>
+    </div>
+    <div class="left-gradient"></div>
+    <div class="right-gradient"></div>
+  </section>
+ 
+  <!-- Community Resources section-->
+  <section id="community-resources" class="section-layout community-resources-layout">
+    <h2>Community Resources</h2>
+    <div class="main-grid">
+      <div class="community-resources-illustration-section">
+        <img src="/svgs/radial_main.svg" alt="" width="844" height="844" class="community-resources-main-content-radial">
+        <div class="community-resources-main-content">
+          <span class="community-resources-main-title">Join our Discord community</span>
+          <p class="community-resources-main-description">Ask questions, get support, chat with the community and the people behind&nbsp;ROS</p>
+          <a href="#" class="community-resources-main-button">
+            <div class="community-resources-main-button-content community-resources-main-button-initial">
+              <img src="/svgs/discord.svg" alt="download icon" class="community-resources-main-button-icon">
+              <span>Join community</span>
+            </div>
+            <div class="community-resources-main-button-content community-resources-main-button-hover">
+              <img src="/svgs/discord.svg" alt="download icon" class="community-resources-main-button-icon">
+              <span>Join community</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="community-resources-list" class="community-resources-list-section">
+        <div class="community-resources-card">
+          <div class="community-resources-content">
+            <span class="community-resources-card-title">Robotics Stack Exchange</span>
+            <a href="#" data-text="Discover" class="secondary-button community-resources-card-button secondary-button-animation">
+              <span>Discover</span>
+            </a>
+          </div>
+          <div class="community-resources-icon-wrapper">
+            <img src="/svgs/stack_exchange.svg" alt="icon Robotics Stack Exchange" class="community-resources-icon">
+          </div>
+        </div>
+        <div class="community-resources-card">
+          <div class="community-resources-content">
+            <span class="community-resources-card-title">Discourse</span>
+            <a href="#" data-text="Discover" class="secondary-button community-resources-card-button secondary-button-animation">
+              <span>Discover</span>
+            </a>
+          </div>
+          <div class="community-resources-icon-wrapper">
+            <img src="/svgs/chat_bubble.svg" alt="icon Discourse" class="community-resources-icon">
+          </div>
+        </div>
+        <div class="community-resources-card">
+          <div class="community-resources-content">
+            <span class="community-resources-card-title">Docker contatiners</span>
+            <a href="#" data-text="Discover" class="secondary-button community-resources-card-button secondary-button-animation">
+              <span>Discover</span>
+            </a>
+          </div>
+          <div class="community-resources-icon-wrapper">
+            <img src="/svgs/docker.svg" alt="icon Docker contatiners" class="community-resources-icon">
+          </div>
+        </div>
+        <div class="community-resources-card">
+          <div class="community-resources-content">
+            <span class="community-resources-card-title">Our Vimeo channel</span>
+            <a href="#" data-text="Discover" class="secondary-button community-resources-card-button secondary-button-animation">
+              <span>Discover</span>
+            </a>
+          </div>
+          <div class="community-resources-icon-wrapper">
+            <img src="/svgs/vimeo.svg" alt="icon Our Vimeo channel" class="community-resources-icon">
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- Distributions section-->
+  <section id="distributions-section" class="section-layout distributions-layout">
+    <h2>End-of-life ROS distributions</h2>
+    <div id="distributions" class="main-grid distributions-grid"></div>
+    <button type="button" id="distributions-show-more-button" class="distributions-show-more-button">
+      Show more
+    </button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+  <div class="main-grid footer-layout">
+    <div class="footer-logo-container">
+      <img class="footer-logo" src="/svgs/ROS_logo.svg" alt="ROS logo">
+    </div>
+    <div class="footer-menu-container">
+      <nav id="footer-menu" class="footer-menu">
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">WHY ROS?</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">MEDIA</a>
+        </div>
+        <div class="footer-menu-wide">
+          <a href="#" class="footer-menu-link">WIKI</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">GETTING STARTED</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">Q&A</a>
+        </div>
+        <div class="footer-menu-wide">
+          <a href="#" class="footer-menu-link">DISCORD</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">COMMUNITY</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">FORUM</a>
+        </div>
+        <div class="footer-menu-wide">
+          <a href="#" class="footer-menu-link">DOCUMENTATION</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">ECOSYSTEM</a>
+        </div>
+        <div class="footer-menu-tight">
+          <a href="#" class="footer-menu-link">PACKAGES</a>
+        </div>
+        <div class="footer-menu-wide">
+          <a href="#" class="footer-menu-link">ROSCON</a>
+        </div>
+      </nav>      
+      <div class="footer-links">
+        <span>Brought to you by</span>
+        <a href="https://www.openrobotics.org/" target='_blank' rel='noopener noreferrer' class="outline-button-text footer-links-size">Open Robotics</a>
+        <div class="separator"></div>
+        <span>licensed under</span>
+        <a href="https://creativecommons.org/licenses/by/3.0/" target='_blank' rel='noopener noreferrer' class="outline-button-text footer-links-size">Creative Commons Attributions 3.0</a>
+        <div class="separator"></div>
+        <span>©2021</span>
+        <a href="https://www.openrobotics.org/" target='_blank' rel='noopener noreferrer' class="outline-button-text footer-links-size">Open Robotics</a>
+      </div>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

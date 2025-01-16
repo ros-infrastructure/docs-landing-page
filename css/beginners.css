@@ -1,0 +1,283 @@
+.beginners-section-layout {
+  margin: 94px 0 74px 0;
+  gap: 34px;
+}
+
+.beginners-content-container {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beginners-description {
+  max-width: 392px;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: var(--primary-black)
+}
+
+.beginners-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beginners-link-item {
+  position: relative;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: var(--link-blue);
+}
+
+.beginners-link-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--link-blue);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.beginners-link-item:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.beginners-table {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 8;
+}
+
+.beginners-table-legend {
+  grid-column: 5 / -1;
+  display: flex;
+  align-content: center;
+  gap: 16px;
+  margin-top: -8px;
+}
+
+.beginners-table-legend-item {
+  display: flex;
+  align-content: center;
+  gap: 8px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--primary-black);
+}
+
+.legend-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.table-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.table-wrapper {
+  border: 1px solid var(--border-gray-two);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed; 
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  height: 68px;
+  border-right: none;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: var(--primary-black);
+  border-bottom: 1px solid var(--border-gray-two);
+  padding: 18px 20px;
+}
+
+th {
+  height: 68px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: var(--primary-black);
+  background-color: var(--alt-white);
+  padding: 18px 20px;
+}
+
+.table-header-cell-main {
+  width: 200px;
+}
+
+.table-header-cell {
+  width: auto;
+}
+
+.false-checkmark {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  align-content: center;
+  justify-content: center;
+  color: #AFB5BF;
+}
+
+.table-version-cell{
+  width: 200px;
+}
+
+@media (max-width: 1279px) {
+  .beginners-section-layout {
+    margin: 190px 0 112px 0;
+    gap: 12px;
+  }
+
+  .beginners-content-container {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .beginners-description {
+    max-width: 680px;
+    font-size: 24px;
+  }
+  
+  .beginners-link-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 24px;
+    margin-bottom: 70px;
+  }
+
+  .beginners-link-item {
+    font-size: 32px;
+  }
+
+  .beginners-table{
+    grid-column: span 6;
+  }
+
+  .beginners-link-list > a:nth-child(2),
+  .beginners-link-list > a:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .beginners-link-list > a:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .beginners-link-list > a:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .table-version-cell{
+    padding-top: 60px;
+  }
+
+  .table-header-cell {
+    padding: 18px 2px 18px 15px;
+  }
+
+  .table-data-cell {
+    padding: 56px 2px 25px 15px;
+  }
+
+  .beginners-table-legend {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+  }
+}
+
+
+@media (max-width: 820px) {
+  .beginners-table{
+    overflow-x: auto;
+    margin: 0 -16px;
+  }
+
+  .table-wrapper{
+    width: 788px;
+    margin: 0 16px 10px 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .beginners-content-container {
+    gap: 32px;
+  }
+
+  .beginners-description {
+    max-width: none;
+    font-size: 20px;
+  }
+
+  .beginners-link-list {
+    margin-bottom: 60px;
+  }
+
+  .beginners-link-item {
+    font-size: 24px;
+  }
+
+  .beginners-table{
+    grid-column: span 4;
+  }
+
+  .table-version-cell{
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .beginners-section-layout {
+    margin: 74px 0 70px 0;
+    gap: 16px;
+  }
+
+  .beginners-description {
+    font-size: 16px;
+  }
+
+  .beginners-link-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  .beginners-link-item {
+    font-size: 20px;
+  }
+
+  .table-data-cell {
+    padding: 20px 2px 14px 15px;
+  }
+
+  .beginners-table-legend {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}
