@@ -18,3 +18,7 @@ The page should appear at `localhost:8000` in your web browser.
 ## Notification Banner
 
 To enable the notification banner find `<!-- Desktop banner-->` in the `index.html` source and uncomment the section. 
+
+## EOL Distros
+
+EOL distro links can be set in `/js/data.js`.
