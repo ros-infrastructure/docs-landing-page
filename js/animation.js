@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title.classList.add('card-title');
       div.appendChild(title);
       const link = document.createElement('a');
-      link.textContent = 'Discover';
+      link.textContent = 'Read';
       link.href = item.link || '#';
       link.classList.add('secondary-button', 'small-card-button');
       div.appendChild(link);

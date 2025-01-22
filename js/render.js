@@ -18,9 +18,9 @@ function renderDistributionsCards(container, items) {
     div.appendChild(title);
 
     const buttonSpan = document.createElement('span');
-    buttonSpan.textContent = 'Discover';
+    buttonSpan.textContent = 'Read';
     const link = document.createElement('a');
-    link.setAttribute('data-text', 'Discover');
+    link.setAttribute('data-text', 'Read');
     link.href = item.link || '#';
     link.classList.add('secondary-button', 'small-card-button', 'secondary-button-animation');
     link.appendChild(buttonSpan);
