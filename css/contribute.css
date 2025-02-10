@@ -1,3 +1,20 @@
+input[type=text], select {
+  width: 60%;
+  background: var(--accent-light-orange);
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:  1px solid var(--primary-black) !important;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: var(--primary-black);
+  font-family: "Overpass", sans-serif;
+}
+
+.search-index{
+  font-family: "Overpass", sans-serif;
+  
+}
 .contribute-section-layout {
   position: relative;
   width: 100%;
