@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "fixup-deploy-action"]
 
 jobs:
   deploy:
