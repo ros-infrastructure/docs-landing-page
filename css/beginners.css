@@ -124,6 +124,10 @@ th {
   padding: 18px 20px;
 }
 
+/* Greying out Windows and MacOS columns for absent recommendation to start */
+td:nth-child(4) { background-color: var(--alt-white); }
+td:nth-child(5) { background-color: var(--alt-white); }
+
 .table-header-cell-main {
   width: 200px;
 }
@@ -141,7 +145,7 @@ th {
   color: #AFB5BF;
 }
 
-.table-version-cell{
+.table-version-cell {
   width: 200px;
 }
 
