@@ -20,7 +20,7 @@ jobs:
           mkdir -p ~/.ssh
           echo $SSH_HOST_PUB_KEY >> ~/.ssh/known_hosts
           install -m 0600 -D /dev/null ~/.ssh/deploy_key
-          echo $SSH_DEPLOY_KEY > ~/.ssh/deploy_key
+          echo -e "${SSH_DEPLOY_KEY}\n" > ~/.ssh/deploy_key
       - name: deploy
         env:
           SSH_ARGS: "-i ~/.ssh/deploy_key"
