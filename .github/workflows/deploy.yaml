@@ -23,7 +23,7 @@ jobs:
           echo $SSH_DEPLOY_KEY > ~/.ssh/deploy_key
       - name: deploy
         env:
-          SSH_ARGS: "-i $HOME/.ssh/deploy_key"
+          SSH_ARGS: "-i ~/.ssh/deploy_key"
         run: |
           ./deploy.sh
 
