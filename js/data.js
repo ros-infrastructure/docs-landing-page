@@ -94,4 +94,9 @@ const rosDistributions = [
     link: 'https://wiki.ros.org/melodic',
     label: 'ROS 1',
   },
+  {
+    title: 'Noetic Ninjemys',
+    link: 'https://wiki.ros.org/noetic',
+    label: 'ROS 1',
+  },
 ]
